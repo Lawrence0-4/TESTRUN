@@ -1,0 +1,16 @@
+{
+    "name": "testsuite-github-ci",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Minimal project to test GitHub Actions CI pipelines",
+    "type": "commonjs",
+    "scripts": {
+        "lint": "node ./scripts/lint.js",
+        "test": "node ./scripts/test.js",
+        "build": "node ./scripts/build.js",
+        "ci": "npm run lint && npm run test && npm run build"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}
